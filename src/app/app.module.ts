@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {MdCardModule} from '@angular2-material/card';
 import { AppComponent } from './app.component';
+import {TimeService} from './shared/time/time.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MdCardModule.forRoot()
   ],
-  providers: [],
+  providers: [TimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

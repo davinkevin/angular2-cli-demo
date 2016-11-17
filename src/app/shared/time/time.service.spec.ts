@@ -3,7 +3,7 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 import { TimeService } from './time.service';
 
-describe('Service: Time', () => {
+describe('TimeService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [TimeService]
